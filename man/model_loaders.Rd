@@ -4,11 +4,14 @@
 \alias{model_loaders}
 \alias{load_outputs}
 \alias{load_config}
+\alias{load_inputs}
 \title{Load model outputs}
 \usage{
 load_outputs(name, subdir = NULL, ...)
 
 load_config(name, subdir = NULL, ...)
+
+load_inputs(name, subdir = NULL, ...)
 }
 \arguments{
 \item{name}{Name of file to load.}

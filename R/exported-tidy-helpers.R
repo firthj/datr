@@ -162,6 +162,12 @@ load_config <- function(name, subdir = NULL, ...) {
   load_model_file("config", name, subdir, ...)
 }
 
+#' @rdname model_loaders
+#' @export
+load_inputs <- function(name, subdir = NULL, ...) {
+  load_model_file("inputs", name, subdir, ...)
+}
+
 load_model_file <- function(model_dir, name, subdir, ...) {
   check_type(name, "character")
   if (!is.null(subdir)) check_type(subdir, "character")
